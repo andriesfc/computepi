@@ -21,8 +21,9 @@ Usage: computepi [OPTIONS]
 
   Compute PI using Monte Carlo approximation
 
-  For a detail explanation see the following article:
+  For a detail explanation see the following articles:
   https://www.geeksforgeeks.org/estimating-value-pi-using-monte-carlo/
+  https://betterprogramming.pub/calculating-pi-%CF%80-with-monte-carlo-using-parallel-computing-with-openmp-and-c-2b3a357f0f78
 
 Options:
   --all                 Print out intermediate calculated values of PI.
