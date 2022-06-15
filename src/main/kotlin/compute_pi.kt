@@ -19,8 +19,10 @@ fun main(args: Array<String>) {
         For a detail explanation see the following articles:
         https://www.geeksforgeeks.org/estimating-value-pi-using-monte-carlo/
         https://betterprogramming.pub/calculating-pi-%CF%80-with-monte-carlo-using-parallel-computing-with-openmp-and-c-2b3a357f0f78
+        https://www.cantorsparadise.com/estimating-%CF%80-using-monte-carlo-simulations-3459a84b5ef9
       
-        """.trimIndent()) {
+        """.trimIndent()
+    ) {
 
         val emitAll by option(
             "--all",
