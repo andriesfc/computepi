@@ -25,8 +25,6 @@ The logic behind this method is that we create random points within the unit squ
 
 ![Monte Carlo results for an increasing number of iterations](assets/calculating_using_openMP and c/1*d2rJRISgAwLA0UmwPSvOkw-5306414.gif)
 
-## 
-
 If you want to learn more about the unit-circle technique and Monte Carlo in general, [this article](https://medium.com/cantors-paradise/estimating-π-using-monte-carlo-simulations-3459a84b5ef9) is a great resource.
 
 First, I applied the algorithm without parallelism to have these times as a reference benchmark.
@@ -93,7 +91,7 @@ Therefore, we don’t need to use *mod m.* The formula can be expressed as:
 
 ![Expressing the formula without mod m](assets/calculating_using_openMP and c/1*JM-ZQrT09uEXdbmm2J8KIA-5306676.png)
 
-According to the book, the numbers we should choose for the algorithm are *a=*1103515245 and *c=*12345, suitable for C99.
+According to the book, the numbers we should choose for the algorithm are `*a=*1103515245` and `*c=*12345`, suitable for C99.
 
 The following code is the updated version of our program containing the changes we made to random numbers generating and all of the necessary code for the OpenMP parallelization.
 
@@ -151,27 +149,26 @@ int main()
 }
 ```
 
-# Results
+## Results
 
 We executed the code on an eight-core machine for different numbers of iterations to get the code’s speed up.
 
-## Time 
+### Time 
 
 ![Dot graph for time.](assets/calculating_using_openMP and c/1*WhFd69c6LQC5jJ10v_ILbQ.png)
 
-## Error
+### Error
 
 ![Dot graph for error.](assets/calculating_using_openMP and c/1*_sUHyzH4nf_im0ogj0VXtA.png)
 
 We observe that for a small number of iterations, the single-core solution is better, which we should expect. The parallelization of a program has a little overhead for managing the threads. As the number of iterations becomes bigger and bigger, this overhead is insignificant, and the parallelization of the program is unbelievably efficient.
 
-# Conclusion
+## Conclusion
 
 Parallel computing is critical — as Moore’s law is coming to an end, and we’re more dependent on multi-core and distributive systems to keep up with increased computational needs, especially in the area of scientific computing.
 
-You can access the code and some other information related to the article on [GitHub](http://ilias1111/parallel-monte-carlo-pi: Calculating π with a parallel Monte Carlo implantation in C (github.com)).
+You can access the code and some other information related to the article on [GitHub](https://github.com/ilias1111/parallel-monte-carlo-pi).
 
 I hope you found the article useful. More articles about parallel computing and pi calculation will come soon. Stay tuned!
 
 Thanks toAnupam Chugh
-
