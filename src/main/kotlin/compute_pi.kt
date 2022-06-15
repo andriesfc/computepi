@@ -16,8 +16,10 @@ fun main(args: Array<String>) {
         name = "computepi",
         help = """Compute PI using Monte Carlo approximation
         
-        For a detail explanation see the following article: 
+        For a detail explanation see the following articles:
         https://www.geeksforgeeks.org/estimating-value-pi-using-monte-carlo/
+        https://betterprogramming.pub/calculating-pi-%CF%80-with-monte-carlo-using-parallel-computing-with-openmp-and-c-2b3a357f0f78
+      
         """.trimIndent()) {
 
         val emitAll by option(
