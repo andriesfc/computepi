@@ -14,7 +14,11 @@ private const val DEFAULT_ITERATIONS = 100
 fun main(args: Array<String>) {
     object : CliktCommand(
         name = "computepi",
-        help = "Compute PI using Monte Carlo approximation") {
+        help = """Compute PI using Monte Carlo approximation
+        
+        For a detail explanation see the following article: 
+        https://www.geeksforgeeks.org/estimating-value-pi-using-monte-carlo/
+        """.trimIndent()) {
 
         val emitAll by option(
             "--all",

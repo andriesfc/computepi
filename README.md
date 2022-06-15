@@ -21,6 +21,9 @@ Usage: computepi [OPTIONS]
 
   Compute PI using Monte Carlo approximation
 
+  For a detail explanation see the following article:
+  https://www.geeksforgeeks.org/estimating-value-pi-using-monte-carlo/
+
 Options:
   --all                 Print out intermediate calculated values of PI.
   --sampleSize INT      Number of points to evaluate per computation of a
@@ -28,6 +31,5 @@ Options:
   -i, --iterations INT  How many iterations should the computation be repeated
                         until the final value is reported. (default: 100)
   -h, --help            Show this message and exit
-
 ```
 
